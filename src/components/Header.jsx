@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -7,30 +8,30 @@ const Header = () => {
         <Logo src="/images/logo.svg" />
 
         <NavMenu>
-          <a>
+          <Link to={"/"}>
             <img src="/images/home-icon.svg" alt="" />
             <span>HOME</span>
-          </a>
-          <a>
+          </Link>
+          <Link>
             <img src="/images/search-icon.svg" alt="" />
             <span>SEARCH</span>
-          </a>
-          <a>
+          </Link>
+          <Link>
             <img src="/images/watchlist-icon.svg" alt="" />
             <span>WATCHLIST</span>
-          </a>
-          <a>
+          </Link>
+          <Link>
             <img src="/images/originals-icon.svg" alt="" />
             <span>ORIGINALS</span>
-          </a>
-          <a>
+          </Link>
+          <Link>
             <img src="/images/movies-icon.svg" alt="" />
             <span>MOVIES</span>
-          </a>
-          <a>
+          </Link>
+          <Link>
             <img src="/images/series-icon.svg" alt="" />
             <span>SERIES</span>
-          </a>
+          </Link>
         </NavMenu>
         <UserImg src="/images/laksh.jpeg" />
       </Nav>
@@ -96,6 +97,7 @@ const NavMenu = styled.div`
 `;
 
 const UserImg = styled.img`
+  object-fit: cover;
   height: 48px;
   width: 48px;
   border-radius: 50%;

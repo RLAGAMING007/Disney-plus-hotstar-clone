@@ -64,6 +64,7 @@ const NavMenu = styled.div`
     align-items: center;
     padding: 0px 12px;
     cursor: pointer;
+    text-decoration: none;
     img {
       height: 20px;
     }
